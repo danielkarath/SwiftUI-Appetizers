@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		393C69B82991340B0046ABAD /* SwiftUI_AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69B72991340B0046ABAD /* SwiftUI_AppetizersApp.swift */; };
-		393C69BA2991340B0046ABAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69B92991340B0046ABAD /* ContentView.swift */; };
+		393C69BA2991340B0046ABAD /* SAAppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69B92991340B0046ABAD /* SAAppetizerTabView.swift */; };
 		393C69BC2991340C0046ABAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393C69BB2991340C0046ABAD /* Assets.xcassets */; };
 		393C69BF2991340C0046ABAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393C69BE2991340C0046ABAD /* Preview Assets.xcassets */; };
+		393C69C62991346C0046ABAD /* SAAppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69C52991346C0046ABAD /* SAAppetizerListView.swift */; };
+		393C69C8299134730046ABAD /* SAAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69C7299134730046ABAD /* SAAccountView.swift */; };
+		393C69CA2991347D0046ABAD /* SAOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69C92991347D0046ABAD /* SAOrderView.swift */; };
+		393C69D0299135C80046ABAD /* SAResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69CF299135C80046ABAD /* SAResources.swift */; };
+		393C69D229913EBA0046ABAD /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69D129913EBA0046ABAD /* Appetizer.swift */; };
+		393C69D4299143A10046ABAD /* SAAppetizerListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		393C69B42991340B0046ABAD /* SwiftUI-Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Appetizers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		393C69B72991340B0046ABAD /* SwiftUI_AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppetizersApp.swift; sourceTree = "<group>"; };
-		393C69B92991340B0046ABAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		393C69B92991340B0046ABAD /* SAAppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAppetizerTabView.swift; sourceTree = "<group>"; };
 		393C69BB2991340C0046ABAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		393C69BE2991340C0046ABAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		393C69C52991346C0046ABAD /* SAAppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAppetizerListView.swift; sourceTree = "<group>"; };
+		393C69C7299134730046ABAD /* SAAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAccountView.swift; sourceTree = "<group>"; };
+		393C69C92991347D0046ABAD /* SAOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAOrderView.swift; sourceTree = "<group>"; };
+		393C69CF299135C80046ABAD /* SAResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAResources.swift; sourceTree = "<group>"; };
+		393C69D129913EBA0046ABAD /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAppetizerListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +63,11 @@
 		393C69B62991340B0046ABAD /* SwiftUI-Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				393C69CE299135B70046ABAD /* Resources */,
+				393C69CB299134870046ABAD /* Model */,
+				393C69CC2991348E0046ABAD /* View */,
+				393C69CD299134940046ABAD /* ModelView */,
 				393C69B72991340B0046ABAD /* SwiftUI_AppetizersApp.swift */,
-				393C69B92991340B0046ABAD /* ContentView.swift */,
-				393C69BB2991340C0046ABAD /* Assets.xcassets */,
 				393C69BD2991340C0046ABAD /* Preview Content */,
 			);
 			path = "SwiftUI-Appetizers";
@@ -65,6 +79,42 @@
 				393C69BE2991340C0046ABAD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		393C69CB299134870046ABAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				393C69D129913EBA0046ABAD /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		393C69CC2991348E0046ABAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				393C69B92991340B0046ABAD /* SAAppetizerTabView.swift */,
+				393C69C52991346C0046ABAD /* SAAppetizerListView.swift */,
+				393C69C7299134730046ABAD /* SAAccountView.swift */,
+				393C69C92991347D0046ABAD /* SAOrderView.swift */,
+				393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		393C69CD299134940046ABAD /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		393C69CE299135B70046ABAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				393C69BB2991340C0046ABAD /* Assets.xcassets */,
+				393C69CF299135C80046ABAD /* SAResources.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393C69BA2991340B0046ABAD /* ContentView.swift in Sources */,
+				393C69BA2991340B0046ABAD /* SAAppetizerTabView.swift in Sources */,
+				393C69D0299135C80046ABAD /* SAResources.swift in Sources */,
 				393C69B82991340B0046ABAD /* SwiftUI_AppetizersApp.swift in Sources */,
+				393C69C8299134730046ABAD /* SAAccountView.swift in Sources */,
+				393C69D229913EBA0046ABAD /* Appetizer.swift in Sources */,
+				393C69CA2991347D0046ABAD /* SAOrderView.swift in Sources */,
+				393C69C62991346C0046ABAD /* SAAppetizerListView.swift in Sources */,
+				393C69D4299143A10046ABAD /* SAAppetizerListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
