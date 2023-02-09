@@ -13,8 +13,7 @@ struct SAAppetizerListViewCell: View {
     
     var body: some View {
         HStack(spacing: 24) {
-            Image(appetizer.imageURL)
-                .resizable()
+            SAAppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(8)
                 .frame(maxWidth: (UIScreen.main.bounds.width-48)/3, maxHeight: (UIScreen.main.bounds.width-48)/4)

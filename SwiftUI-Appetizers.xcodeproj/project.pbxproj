@@ -23,6 +23,8 @@
 		39BE2ECA29951DC0009806C6 /* SAAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC929951DC0009806C6 /* SAAlert.swift */; };
 		39BE2ED029953036009806C6 /* SAActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ECF29953036009806C6 /* SAActivityIndicator.swift */; };
 		39BE2ED229953274009806C6 /* SALoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ED129953274009806C6 /* SALoadingView.swift */; };
+		39BE2ED4299546D3009806C6 /* SAImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ED3299546D3009806C6 /* SAImageLoader.swift */; };
+		39BE2ED629954897009806C6 /* SARemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ED529954897009806C6 /* SARemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		39BE2EC929951DC0009806C6 /* SAAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAlert.swift; sourceTree = "<group>"; };
 		39BE2ECF29953036009806C6 /* SAActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAActivityIndicator.swift; sourceTree = "<group>"; };
 		39BE2ED129953274009806C6 /* SALoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SALoadingView.swift; sourceTree = "<group>"; };
+		39BE2ED3299546D3009806C6 /* SAImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAImageLoader.swift; sourceTree = "<group>"; };
+		39BE2ED529954897009806C6 /* SARemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SARemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			children = (
 				393C69D129913EBA0046ABAD /* Appetizer.swift */,
 				39BE2EC3299505BB009806C6 /* SANetworkManager.swift */,
+				39BE2ED3299546D3009806C6 /* SAImageLoader.swift */,
 				39BE2EC529950789009806C6 /* SAError.swift */,
 			);
 			path = Model;
@@ -122,6 +127,7 @@
 				39BE2ECF29953036009806C6 /* SAActivityIndicator.swift */,
 				39BE2EC729951C0B009806C6 /* SAListViewModel.swift */,
 				39BE2EC929951DC0009806C6 /* SAAlert.swift */,
+				39BE2ED529954897009806C6 /* SARemoteImage.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BE2ECA29951DC0009806C6 /* SAAlert.swift in Sources */,
+				39BE2ED629954897009806C6 /* SARemoteImage.swift in Sources */,
 				393C69BA2991340B0046ABAD /* SAAppetizerTabView.swift in Sources */,
 				39BE2EC829951C0B009806C6 /* SAListViewModel.swift in Sources */,
 				393C69D0299135C80046ABAD /* SAColorExtension.swift in Sources */,
@@ -214,6 +221,7 @@
 				393C69B82991340B0046ABAD /* SwiftUI_AppetizersApp.swift in Sources */,
 				393C69C8299134730046ABAD /* SAAccountView.swift in Sources */,
 				393C69D229913EBA0046ABAD /* Appetizer.swift in Sources */,
+				39BE2ED4299546D3009806C6 /* SAImageLoader.swift in Sources */,
 				39BE2ED229953274009806C6 /* SALoadingView.swift in Sources */,
 				39BE2ED029953036009806C6 /* SAActivityIndicator.swift in Sources */,
 				393C69CA2991347D0046ABAD /* SAOrderView.swift in Sources */,

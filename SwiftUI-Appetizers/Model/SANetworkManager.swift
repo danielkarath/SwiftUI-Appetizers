@@ -5,11 +5,12 @@
 //  Created by Daniel Karath on 2/9/23.
 //
 
-import Foundation
+import UIKit
 
 final class SANetworkManager {
     
     static let shared = SANetworkManager()
+    private let cache = NSCache<NSString, UIImage>()
     
     private let appetizerURL: String = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers"
     
@@ -42,4 +43,29 @@ final class SANetworkManager {
         task.resume()
     }
     
+    public func getAppetizerImage(fromURLString urlString: String, completion: @escaping (UIImage?) -> Void) {
+        //Check if uiimage is in cache
+        let cacheKey = NSString(string: urlString)
+        if let image = cache.object(forKey: cacheKey) {
+            completion(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            guard let data = data, let image = UIImage(data: data) else {
+                completion(nil
+                )
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            completion(image)
+        }
+        task.resume()
+    }
 }
