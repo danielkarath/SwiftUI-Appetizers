@@ -27,7 +27,7 @@ struct SAAppetizerTabView: View {
                 }
 
         }
-        .accentColor(SAResources.shared.brandDarkGreen)
+        .accentColor(.brandDarkGreen)
     }
 }
 

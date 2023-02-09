@@ -14,14 +14,22 @@ struct SAAppetizerListView: View {
     private let viewTitle: String = "Appetizers"
     
     var body: some View {
-        NavigationView {
-            List(viewModel.appetizers, id: \.id) { appetizer in
-                SAAppetizerListViewCell(appetizer: appetizer)
+        ZStack {
+            NavigationView {
+                List(viewModel.appetizers, id: \.id) { appetizer in
+                    SAAppetizerListViewCell(appetizer: appetizer)
+                }
+                .navigationTitle("🍟 Appetizers")
             }
-            .navigationTitle("🍟 Appetizers")
+            .onAppear {
+                viewModel.getAppetizers()
+            }
+            if viewModel.isLoading {
+                SALoadingView()
+            }
         }
-        .onAppear {
-            viewModel.getAppetizers()
+        .alert(item: $viewModel.alertItem) { alert in
+            Alert(title: alert.title, message: alert.message, dismissButton: alert.dismissButton)
         }
     }
 }

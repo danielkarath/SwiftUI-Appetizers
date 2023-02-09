@@ -14,12 +14,15 @@
 		393C69C62991346C0046ABAD /* SAAppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69C52991346C0046ABAD /* SAAppetizerListView.swift */; };
 		393C69C8299134730046ABAD /* SAAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69C7299134730046ABAD /* SAAccountView.swift */; };
 		393C69CA2991347D0046ABAD /* SAOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69C92991347D0046ABAD /* SAOrderView.swift */; };
-		393C69D0299135C80046ABAD /* SAResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69CF299135C80046ABAD /* SAResources.swift */; };
+		393C69D0299135C80046ABAD /* SAColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69CF299135C80046ABAD /* SAColorExtension.swift */; };
 		393C69D229913EBA0046ABAD /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69D129913EBA0046ABAD /* Appetizer.swift */; };
 		393C69D4299143A10046ABAD /* SAAppetizerListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */; };
 		39BE2EC4299505BB009806C6 /* SANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC3299505BB009806C6 /* SANetworkManager.swift */; };
 		39BE2EC629950789009806C6 /* SAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC529950789009806C6 /* SAError.swift */; };
 		39BE2EC829951C0B009806C6 /* SAListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC729951C0B009806C6 /* SAListViewModel.swift */; };
+		39BE2ECA29951DC0009806C6 /* SAAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC929951DC0009806C6 /* SAAlert.swift */; };
+		39BE2ED029953036009806C6 /* SAActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ECF29953036009806C6 /* SAActivityIndicator.swift */; };
+		39BE2ED229953274009806C6 /* SALoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ED129953274009806C6 /* SALoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +34,15 @@
 		393C69C52991346C0046ABAD /* SAAppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAppetizerListView.swift; sourceTree = "<group>"; };
 		393C69C7299134730046ABAD /* SAAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAccountView.swift; sourceTree = "<group>"; };
 		393C69C92991347D0046ABAD /* SAOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAOrderView.swift; sourceTree = "<group>"; };
-		393C69CF299135C80046ABAD /* SAResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAResources.swift; sourceTree = "<group>"; };
+		393C69CF299135C80046ABAD /* SAColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAColorExtension.swift; sourceTree = "<group>"; };
 		393C69D129913EBA0046ABAD /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAppetizerListViewCell.swift; sourceTree = "<group>"; };
 		39BE2EC3299505BB009806C6 /* SANetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANetworkManager.swift; sourceTree = "<group>"; };
 		39BE2EC529950789009806C6 /* SAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAError.swift; sourceTree = "<group>"; };
 		39BE2EC729951C0B009806C6 /* SAListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAListViewModel.swift; sourceTree = "<group>"; };
+		39BE2EC929951DC0009806C6 /* SAAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAlert.swift; sourceTree = "<group>"; };
+		39BE2ECF29953036009806C6 /* SAActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAActivityIndicator.swift; sourceTree = "<group>"; };
+		39BE2ED129953274009806C6 /* SALoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SALoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				393C69C7299134730046ABAD /* SAAccountView.swift */,
 				393C69C92991347D0046ABAD /* SAOrderView.swift */,
 				393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */,
+				39BE2ED129953274009806C6 /* SALoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,7 +119,9 @@
 		393C69CD299134940046ABAD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				39BE2ECF29953036009806C6 /* SAActivityIndicator.swift */,
 				39BE2EC729951C0B009806C6 /* SAListViewModel.swift */,
+				39BE2EC929951DC0009806C6 /* SAAlert.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -121,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				393C69BB2991340C0046ABAD /* Assets.xcassets */,
-				393C69CF299135C80046ABAD /* SAResources.swift */,
+				393C69CF299135C80046ABAD /* SAColorExtension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,14 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BE2ECA29951DC0009806C6 /* SAAlert.swift in Sources */,
 				393C69BA2991340B0046ABAD /* SAAppetizerTabView.swift in Sources */,
 				39BE2EC829951C0B009806C6 /* SAListViewModel.swift in Sources */,
-				393C69D0299135C80046ABAD /* SAResources.swift in Sources */,
+				393C69D0299135C80046ABAD /* SAColorExtension.swift in Sources */,
 				39BE2EC629950789009806C6 /* SAError.swift in Sources */,
 				39BE2EC4299505BB009806C6 /* SANetworkManager.swift in Sources */,
 				393C69B82991340B0046ABAD /* SwiftUI_AppetizersApp.swift in Sources */,
 				393C69C8299134730046ABAD /* SAAccountView.swift in Sources */,
 				393C69D229913EBA0046ABAD /* Appetizer.swift in Sources */,
+				39BE2ED229953274009806C6 /* SALoadingView.swift in Sources */,
+				39BE2ED029953036009806C6 /* SAActivityIndicator.swift in Sources */,
 				393C69CA2991347D0046ABAD /* SAOrderView.swift in Sources */,
 				393C69C62991346C0046ABAD /* SAAppetizerListView.swift in Sources */,
 				393C69D4299143A10046ABAD /* SAAppetizerListViewCell.swift in Sources */,
