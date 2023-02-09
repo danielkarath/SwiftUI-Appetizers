@@ -19,6 +19,7 @@
 		393C69D4299143A10046ABAD /* SAAppetizerListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */; };
 		39BE2EC4299505BB009806C6 /* SANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC3299505BB009806C6 /* SANetworkManager.swift */; };
 		39BE2EC629950789009806C6 /* SAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC529950789009806C6 /* SAError.swift */; };
+		39BE2EC829951C0B009806C6 /* SAListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2EC729951C0B009806C6 /* SAListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		393C69D3299143A10046ABAD /* SAAppetizerListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAppetizerListViewCell.swift; sourceTree = "<group>"; };
 		39BE2EC3299505BB009806C6 /* SANetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANetworkManager.swift; sourceTree = "<group>"; };
 		39BE2EC529950789009806C6 /* SAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAError.swift; sourceTree = "<group>"; };
+		39BE2EC729951C0B009806C6 /* SAListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 				393C69CE299135B70046ABAD /* Resources */,
 				393C69CB299134870046ABAD /* Model */,
 				393C69CC2991348E0046ABAD /* View */,
-				393C69CD299134940046ABAD /* ModelView */,
+				393C69CD299134940046ABAD /* ViewModel */,
 				393C69B72991340B0046ABAD /* SwiftUI_AppetizersApp.swift */,
 				393C69BD2991340C0046ABAD /* Preview Content */,
 			);
@@ -107,11 +109,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		393C69CD299134940046ABAD /* ModelView */ = {
+		393C69CD299134940046ABAD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				39BE2EC729951C0B009806C6 /* SAListViewModel.swift */,
 			);
-			path = ModelView;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		393C69CE299135B70046ABAD /* Resources */ = {
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				393C69BA2991340B0046ABAD /* SAAppetizerTabView.swift in Sources */,
+				39BE2EC829951C0B009806C6 /* SAListViewModel.swift in Sources */,
 				393C69D0299135C80046ABAD /* SAResources.swift in Sources */,
 				39BE2EC629950789009806C6 /* SAError.swift in Sources */,
 				39BE2EC4299505BB009806C6 /* SANetworkManager.swift in Sources */,

@@ -9,14 +9,19 @@ import SwiftUI
 
 struct SAAppetizerListView: View {
     
+    @StateObject public var viewModel = SAListViewModel()
+    
     private let viewTitle: String = "Appetizers"
     
     var body: some View {
         NavigationView {
-            List(MockData.appetizers, id: \.id) { appetizer in
+            List(viewModel.appetizers, id: \.id) { appetizer in
                 SAAppetizerListViewCell(appetizer: appetizer)
             }
             .navigationTitle("🍟 Appetizers")
+        }
+        .onAppear {
+            viewModel.getAppetizers()
         }
     }
 }
